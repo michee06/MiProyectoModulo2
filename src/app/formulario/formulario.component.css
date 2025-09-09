@@ -1,0 +1,10 @@
+TextField {
+    margin-bottom: 10;
+    border-bottom-width: 1;
+    border-color: #888;
+  }
+  Button {
+    background-color: #3b82f6;
+    color: white;
+  }
+  

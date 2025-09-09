@@ -1,0 +1,5 @@
+<StackLayout padding="20">
+  <TextField [(ngModel)]="newItem.title" name="title" hint="Título" required></TextField>
+  <TextField [(ngModel)]="newItem.description" name="description" hint="Descripción" required></TextField>
+  <Button text="Crear Item" (tap)="submitForm(f)" #f="ngForm"></Button>
+</StackLayout>

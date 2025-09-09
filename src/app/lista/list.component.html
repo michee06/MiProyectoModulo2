@@ -1,0 +1,13 @@
+<StackLayout>
+  <Button text="Actualizar Listado" (tap)="refreshList()"></Button>
+
+  <ListView [items]="items">
+    <ng-template let-item="item">
+      <FlexboxLayout flexDirection="row" justifyContent="space-between" padding="10" borderBottomWidth="1" borderColor="#ccc">
+        <Label [text]="item.title"></Label>
+        <Button text="Detalles" (tap)="goToDetail(item)"></Button>
+        <Button #actionBtn text="Acción" (tap)="showAction(item)"></Button>
+      </FlexboxLayout>
+    </ng-template>
+  </ListView>
+</StackLayout>
